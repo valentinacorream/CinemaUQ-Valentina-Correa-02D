@@ -8,7 +8,7 @@ public class Asiento {
         this.codigo = codigo;
         this.fila = fila;
         this.numero = numero;
-        this.estadoAsiento = estadoAsiento;
+        this.estadoAsiento = EstadoAsiento.DISPONIBLE;
     }
 
     public String getCodigo() {
