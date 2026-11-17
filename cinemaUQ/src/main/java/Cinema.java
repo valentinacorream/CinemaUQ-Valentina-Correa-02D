@@ -103,7 +103,7 @@ public class Cinema {
         boolean agregado = false;
         boolean existe = verificarPeliculas(pelicula.getCodigo());
 
-        if (existe == false) {
+        if (existe == true) {
             throw new PeliculaDuplicadaException(
                     "Ya existe una película con ese código"
             );
@@ -174,7 +174,7 @@ public class Cinema {
         boolean agregado = false;
         boolean existe = verificarSalas(sala.getCodigo());
 
-        if (existe == false) {
+        if (existe == true) {
             throw new SalaDuplicadaException(
                     "Ya existe una sala con ese código"
             );
